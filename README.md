@@ -1,6 +1,6 @@
 # @dot-event/wait
 
-[dot-event](https://github.com/dot-event/dot-event#readme) async await
+[dot-event](https://github.com/dot-event/dot-event#readme) async wait
 
 ![wait](wait.gif)
 
