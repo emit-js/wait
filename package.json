@@ -22,6 +22,7 @@
     "test": "jest"
   },
   "devDependencies": {
+    "dot-event": "3.0.31",
     "eslint": "5.12.0",
     "eslint-config-prettier": "3.3.0",
     "eslint-plugin-prettier": "3.0.1",
@@ -119,8 +120,5 @@
       "<rootDir>/**/*Test.js"
     ],
     "testEnvironment": "node"
-  },
-  "dependencies": {
-    "dot-event": "3.0.31"
   }
 }
