@@ -33,8 +33,8 @@ await Promise.all([test(), test()]) // finishes
 
 ## Why?
 
-Sometimes you want to call the same function multiple times asynchronously and have each call wait to reach certain "checkpoints".
+Sometimes you want to call the same function multiple times asynchronously, and you want each call to wait for certain "checkpoints" across all calls.
 
-As long as you know how many enumerations there are, you can wait for each call to reach `dot.wait` before continuing.
+As long as you know how many enumerations (`count`) there are, you can wait for each call to reach `dot.wait` before continuing.
 
 Each `dot.wait` must receive a unique prop to begin a new counter.
