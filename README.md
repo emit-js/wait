@@ -23,7 +23,7 @@ Wait for two async processes to call `dot.wait`:
 
 ```js
 async function test() {
-  await dot.wait("my", "prop", { count: 2 })
+  await dot.wait({ count: 2 })
 }
 
 await test() // never finishes
