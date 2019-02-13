@@ -28,7 +28,7 @@ async function test() {
 
 await test() // never finishes
 
-Promise.all([test(), test()]) // finishes
+await Promise.all([test(), test()]) // finishes
 ```
 
 ## Why?
