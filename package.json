@@ -1,5 +1,5 @@
 {
-  "name": "wait",
+  "name": "@dot-event/wait",
   "version": "0.0.1",
   "description": "dot-event async wait",
   "keywords": [
