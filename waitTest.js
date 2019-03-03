@@ -1,11 +1,11 @@
 /*global Promise*/
 /* eslint-env jest */
 
-var dot = require("dot-event")(),
+var dot,
   wait = require("./")
 
 beforeEach(function() {
-  dot.reset()
+  dot = require("dot-event")()
   wait(dot)
 })
 
