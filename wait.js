@@ -2,16 +2,16 @@
 /*prettier-ignore*/
 "use strict"
 
-module.exports = function(dot, opts) {
-  if (dot.state.wait) {
+module.exports = function(dot) {
+  if (dot.wait) {
     return
   }
 
-  dot.state.wait = Object.assign({}, opts, {
+  dot.state.wait = {
     counters: {},
     promises: {},
     resolvers: {},
-  })
+  }
 
   dot.any("wait", wait)
 }
