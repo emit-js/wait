@@ -9,6 +9,7 @@ module.exports = function(dot) {
 
   dot.state.wait = {
     counters: {},
+    counts: {},
     promises: {},
     resolvers: {},
   }
@@ -32,9 +33,13 @@ function wait(prop, arg, dot) {
     state.resolvers[propStr] = resolve
   }
 
+  if (arg && arg.count) {
+    state.counts[propStr] = arg.count
+  }
+
   state.counters[propStr]++
 
-  if (state.counters[propStr] >= arg.count) {
+  if (state.counters[propStr] >= state.counts[propStr]) {
     state.resolvers[propStr]()
   }
 

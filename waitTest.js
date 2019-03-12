@@ -14,7 +14,7 @@ test("wait", function() {
 
   return Promise.all([
     dot.wait("test", { count: 2 }),
-    dot.wait("test", { count: 2 }),
+    dot.wait("test"),
   ]).then(function() {
     expect(dot.state.wait.counters.test).toBe(2)
   })
