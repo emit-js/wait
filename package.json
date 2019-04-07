@@ -3,7 +3,7 @@
   "version": "0.0.7",
   "description": "emit async wait",
   "keywords": [
-    "@emit-js/emit",
+    "emit",
     "async",
     "wait"
   ],
