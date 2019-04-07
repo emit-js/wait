@@ -2,24 +2,24 @@
 /*prettier-ignore*/
 "use strict"
 
-module.exports = function(dot) {
-  if (dot.wait) {
+module.exports = function(emit) {
+  if (emit.wait) {
     return
   }
 
-  dot.state.wait = {
+  emit.state.wait = {
     counters: {},
     counts: {},
     promises: {},
     resolvers: {},
   }
 
-  dot.any("wait", wait)
+  emit.any("wait", wait)
 }
 
-function wait(prop, arg, dot) {
+function wait(arg, prop, emit) {
   var propStr = prop.join("."),
-    state = dot.state.wait
+    state = emit.state.wait
 
   if (state.counters[propStr] === undefined) {
     var resolve

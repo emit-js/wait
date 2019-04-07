@@ -1,20 +1,20 @@
 {
-  "name": "@dot-event/wait",
+  "name": "@emit-js/wait",
   "version": "0.0.7",
-  "description": "dot-event async wait",
+  "description": "emit async wait",
   "keywords": [
-    "dot-event",
+    "@emit-js/emit",
     "async",
     "wait"
   ],
-  "author": "dot-event <oss@dot-event.io>",
+  "author": "emit <emit@emit-js.com>",
   "main": "wait.js",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/dot-event/wait.git"
+    "url": "git+ssh://git@github.com/emit-js/wait.git"
   },
   "license": "MIT",
-  "homepage": "https://github.com/dot-event/wait#readme",
+  "homepage": "https://github.com/emit-js/wait#readme",
   "scripts": {
     "fix": "npm run lint -- --fix",
     "lint": "eslint --ignore-path .gitignore --ext=js .",
@@ -22,14 +22,14 @@
     "test": "jest"
   },
   "devDependencies": {
-    "dot-event": "3.2.2",
+    "@emit-js/emit": "3.2.8",
     "eslint": "5.16.0",
     "eslint-config-prettier": "4.1.0",
     "eslint-plugin-prettier": "3.0.1",
     "prettier": "1.16.4",
     "husky": "1.3.1",
     "lint-staged": "8.1.5",
-    "jest": "24.5.0"
+    "jest": "24.7.1"
   },
   "eslintConfig": {
     "env": {

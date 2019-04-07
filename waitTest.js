@@ -1,21 +1,21 @@
 /*global Promise*/
 /* eslint-env jest */
 
-var dot,
+var emit,
   wait = require("./")
 
 beforeEach(function() {
-  dot = require("dot-event")()
-  wait(dot)
+  emit = require("@emit-js/emit")()
+  wait(emit)
 })
 
 test("wait", function() {
   expect.assertions(1)
 
   return Promise.all([
-    dot.wait("test", { count: 2 }),
-    dot.wait("test"),
+    emit.wait("test", { count: 2 }),
+    emit.wait("test", { count: 2 }),
   ]).then(function() {
-    expect(dot.state.wait.counters.test).toBe(2)
+    expect(emit.state.wait.counters.test).toBe(2)
   })
 })
